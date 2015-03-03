@@ -1,0 +1,40 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: crowdvitality_development
+  host: localhost
+  pool: 5
+  port: 5432
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: crowdvitality_test
+  host: localhost
+  pool: 5
+  port: 5432
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: crowdvitality_production
+  host: localhost
+  pool: 5
+  port: 5432
+
+# default: &default
+#   adapter: sqlite3
+#   pool: 5
+#   timeout: 5000
+
+# development:
+#   <<: *default
+#   database: db/development.sqlite3
+
+# test:
+#   <<: *default
+#   database: db/test.sqlite3
+
+# production:
+#   <<: *default
+#   database: db/production.sqlite3

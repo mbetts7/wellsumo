@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crowd Vitality</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  
+  <!-- googlefonts -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans|Anton|Allan|Ropa+Sans|Exo+2|Pacifico|Lato:400,700' rel='stylesheet' type='text/css'>
+  
+  <!-- segment.com -->
+  <script type="text/javascript">
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
+  analytics.load("2e66gmonzOMSGJDFP2ZEXE0oXtEX7DN5");
+  analytics.page()
+  }}();
+  </script>
+  
+  <!-- mailchimp -->
+  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us10.list-manage.com","uuid":"7ca0ed780e9911d0d6792db6b","lid":"c8573b8a86"}) })
+  </script>
+
+  <!-- optimizely -->
+  <script src="//cdn.optimizely.com/js/2432320121.js"></script>
+  
+  <%= csrf_meta_tags %>
+</head>
+  <body>
+<!--     <p class="notice"><#%= notice %></p>
+    <p class="alert"><#%= alert %></p> -->
+    <%= yield %>
+  </body>
+</html>

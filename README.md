@@ -1,0 +1,1 @@
+Check out mailcatcher: https://github.com/sj26/mailcatcher
