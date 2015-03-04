@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: crowdvitality_development
+  database: wellsumo_development
   host: localhost
   pool: 5
   port: 5432
@@ -9,7 +9,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: crowdvitality_test
+  database: wellsumo_test
   host: localhost
   pool: 5
   port: 5432
@@ -17,7 +17,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: crowdvitality_production
+  database: wellsumo_production
   host: localhost
   pool: 5
   port: 5432
